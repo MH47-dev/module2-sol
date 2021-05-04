@@ -1,0 +1,69 @@
+h1 {
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto ;
+	grid-auto-rows: auto;
+	grid-column-gap: 5px;
+	text-align: center;
+}
+
+.whatever-1, .whatever-2, .whatever-3 {
+	border: 1px solid black;
+	background-color: grey;
+	color: #000;
+}	  
+
+
+
+#pls { /*title of the menu */
+	border: 1px solid black;
+	float: right;
+	background-color: pink;
+    width: 100px;
+
+}
+
+#pls-2 { /*title of the menu */
+	border: 1px solid black;
+	float: right;
+	background-color: red;
+	width: 100px;
+
+}
+#pls-3  { /*title of the menu */
+	border: 1px solid black;
+	float: right;
+	background-color: cadetblue;
+	width: 100px;
+}
+.ok {
+	margin-top:; 
+	text-align: left;
+	margin-left: 8px;
+	padding: 5px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	    .whatever-3 {
+	    	grid-column-start: 1;
+	    	grid-column-end: 3;
+	    	margin-top: 5px;	    	
+	}
+
+} 
+
+@media (max-width: 767px) {
+	.grid-container {
+		grid-template-columns: auto;
+		grid-row-gap: 10px;
+	}
+}
